@@ -1,0 +1,51 @@
+// BreakPoints
+$bp-largest: 62.5em; // 1000px
+$bp-large: 50em; // 800px
+$bp-small: 31.25em; // 500px
+$bp-smallest: 21.875em; // 350px
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+html {
+	// background-color: #eb2f64;
+	background-image: linear-gradient(to right bottom, #eb2f64, #BA265D);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	// height: 100vh;
+	font-family: sans-serif;
+	color: #ccc;
+	font-size: 62.5%;
+	font-weight: 400;
+
+	box-sizing: border-box;
+
+	@media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+	}
+	
+	@media only screen and (max-width: $bp-large) {
+        font-size: 40%;
+	}
+	
+	@media only screen and (max-width: $bp-small) {
+        font-size: 30%;
+	}
+	
+	@media only screen and (max-width: $bp-smallest) {
+        font-size: 25%;
+    }
+}

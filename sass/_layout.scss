@@ -1,0 +1,170 @@
+.container {
+	position: relative;
+	font-size: 10rem;
+    // padding: 6rem 4rem;
+    
+    margin: 10rem 8rem;
+
+    text-align: center;
+    
+    @media only screen and (max-width: $bp-largest) {
+        margin: 25rem 6rem;
+	}
+	
+	@media only screen and (max-width: $bp-large) {
+        margin: 35rem 4rem;
+    }
+
+	&__watch {
+		
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: block;
+
+        
+        span {
+            margin: 0;
+            padding: 0;
+
+            position: relative;
+
+            display: inline-block;
+
+            z-index: 99;
+
+
+        }
+	}
+
+	&__binary-watch {
+
+        // TODO Remove the withe space after the inline block element
+        display: inline-block;
+        font-size: 2rem;
+        min-width: 60%;
+
+	
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+            
+        }
+
+		&--hour,
+		&--minute,
+		&--second {
+
+            width: 33.333333%;
+            float: left;
+
+            position: relative;
+
+            
+
+            
+			
+			
+		}
+
+		&--hour div,
+		&--minute div,
+		&--second div {
+
+
+
+            margin: 1.5rem 0;
+
+            padding: 2rem 2rem;
+
+            width: 3rem;
+            height: 3rem;
+
+            border-radius: 50%;
+            box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, .4);
+
+            background-color: #ccc;
+
+            box-sizing: content-box;
+
+            animation: fadeIn .4s ease-out;
+
+            position: relative;
+
+            z-index: 1;
+
+            
+
+        }
+        
+        &--hour div {
+            margin-left: auto;
+        }
+
+        &--minute div {
+            margin: 1.5rem auto;
+        }
+
+        &--full-color {
+            background-image: radial-gradient( #ccc, #333) !important;
+            // background-color: #333 !important;
+        }
+
+        
+    }
+
+}
+
+@keyframes moveDownUp {
+    0% {
+        transform: translateY(6rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-6rem);
+        opacity: 0;
+    }
+}
+
+@keyframes clockMove {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-down {
+    position: relative;
+    // transform: translateY(2rem);
+    animation: moveDownUp .4s ease-out;
+    // animation: moveUpDown .4s ease-out .6s;
+    
+}
+
+.animate-up {
+    animation: moveUpDown .4s ease-out .6s;
+}
