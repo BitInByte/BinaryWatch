@@ -22,6 +22,8 @@
         
         display: block;
 
+        // text-shadow: 0rem 3rem 8rem rgba(0, 0, 0, .4);
+
         
         span {
             margin: 0;
@@ -30,6 +32,8 @@
             position: relative;
 
             display: inline-block;
+
+            text-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, .6);
 
             z-index: 99;
 

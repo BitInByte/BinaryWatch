@@ -55,6 +55,7 @@ html {
       padding: 0;
       position: relative;
       display: inline-block;
+      text-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.6);
       z-index: 99; }
   .container__binary-watch {
     display: inline-block;
