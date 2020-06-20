@@ -1,6 +1,6 @@
 # Binary Clock  
 ## [Check it here](https://bitinbyte.github.io/BinaryWatch/)
-![Thumbnail](thumbnail.jpg)
+![Thumbnail](thumbnail.png)
 Thumbnail of the Binary Clock web app 
 ## Intro
 Basic project made in hollidays without internet. This project was a challenge to myself to perform a small product without using the internet to search for something.   
