@@ -1,5 +1,3 @@
-// const timeContainer = document.querySelector(".container__watch");
-
 // Variables object
 const state = {
 	h: 0,
@@ -9,7 +7,7 @@ const state = {
 };
 
 // debug
-window.state = state;
+// window.state = state;
 
 const init = () => {
 
