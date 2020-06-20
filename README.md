@@ -5,6 +5,11 @@ Thumbnail of the Binary Clock web app
 ## Intro
 Basic project made in hollidays without internet. This project was a challenge to myself to perform a small product without using the internet to search for something.   
 ### Installing
+
+First all of the modules need to be installed with:  
+```
+npm install
+```
   
 The project can be cloned and there's two steps to test the project and can be tested by yourself, with all of the changes that you want to do!  
   
