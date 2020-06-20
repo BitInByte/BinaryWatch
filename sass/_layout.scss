@@ -1,18 +1,17 @@
 .container {
 	position: relative;
 	font-size: 10rem;
-    // padding: 6rem 4rem;
     
-    margin: 10rem 8rem;
+    padding: 10rem 8rem;
 
     text-align: center;
     
     @media only screen and (max-width: $bp-largest) {
-        margin: 25rem 6rem;
+        padding: 15rem 6rem;
 	}
 	
 	@media only screen and (max-width: $bp-large) {
-        margin: 35rem 4rem;
+        padding: 25rem 4rem;
     }
 
 	&__watch {
@@ -21,8 +20,6 @@
         background-size: cover;
         
         display: block;
-
-        // text-shadow: 0rem 3rem 8rem rgba(0, 0, 0, .4);
 
         
         span {
@@ -74,11 +71,6 @@
             float: left;
 
             position: relative;
-
-            
-
-            
-			
 			
 		}
 
@@ -122,7 +114,6 @@
 
         &--full-color {
             background-image: radial-gradient( #ccc, #333) !important;
-            // background-color: #333 !important;
         }
 
         
