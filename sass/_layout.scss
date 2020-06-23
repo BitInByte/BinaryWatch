@@ -40,6 +40,7 @@
 
 	&__binary-watch {
 
+        // TODO Remove the withe space after the inline block element
         display: inline-block;
         font-size: 2rem;
         min-width: 60%;
@@ -153,7 +154,9 @@
 
 .animate-down {
     position: relative;
+    // transform: translateY(2rem);
     animation: moveDownUp .4s ease-out;
+    // animation: moveUpDown .4s ease-out .6s;
     
 }
 

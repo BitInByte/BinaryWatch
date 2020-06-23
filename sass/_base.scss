@@ -20,10 +20,12 @@ $bp-smallest: 21.875em; // 350px
 
 body,
 html {
+	// background-color: #eb2f64;
 	background-image: linear-gradient(to right bottom, #eb2f64, #BA265D);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100%;
+	min-height: 100vh;
+	// height: 100vh;
 	font-family: sans-serif;
 	color: #ccc;
 	font-size: 62.5%;
